@@ -27,7 +27,7 @@ class Registry;
  *
  * A persistent view returns all the entities and only the entities that have
  * at least the given components. Moreover, it's guaranteed that the entity list
- * is thightly packed in memory for fast iterations.<br/>
+ * is tightly packed in memory for fast iterations.<br/>
  * In general, persistent views don't stay true to the order of any set of
  * components unless users explicitly sort them.
  *
@@ -166,8 +166,8 @@ public:
      * Attempting to use an invalid component type results in a compilation
      * error. Attempting to use an entity that doesn't belong to the view
      * results in undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Type of the component to get.
      * @param entity A valid entity identifier.
@@ -182,15 +182,15 @@ public:
     /**
      * @brief Returns the component assigned to the given entity.
      *
-     * Prefer this function instead of `Registry::get` during iterations.
-     * It has far better performance than its companion function.
+     * Prefer this function instead of `Registry::get` during iterations. It has
+     * far better performance than its companion function.
      *
      * @warning
      * Attempting to use an invalid component type results in a compilation
      * error. Attempting to use an entity that doesn't belong to the view
      * results in undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Type of the component to get.
      * @param entity A valid entity identifier.
@@ -211,8 +211,8 @@ public:
      * Attempting to use invalid component types results in a compilation error.
      * Attempting to use an entity that doesn't belong to the view results in
      * undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Types of the components to get.
      * @param entity A valid entity identifier.
@@ -235,8 +235,8 @@ public:
      * Attempting to use invalid component types results in a compilation error.
      * Attempting to use an entity that doesn't belong to the view results in
      * undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Types of the components to get.
      * @param entity A valid entity identifier.
@@ -522,15 +522,15 @@ public:
     /**
      * @brief Returns the component assigned to the given entity.
      *
-     * Prefer this function instead of `Registry::get` during iterations.
-     * It has far better performance than its companion function.
+     * Prefer this function instead of `Registry::get` during iterations. It has
+     * far better performance than its companion function.
      *
      * @warning
      * Attempting to use an invalid component type results in a compilation
      * error. Attempting to use an entity that doesn't belong to the view
      * results in undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Type of the component to get.
      * @param entity A valid entity identifier.
@@ -552,8 +552,8 @@ public:
      * Attempting to use an invalid component type results in a compilation
      * error. Attempting to use an entity that doesn't belong to the view
      * results in undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Type of the component to get.
      * @param entity A valid entity identifier.
@@ -574,8 +574,8 @@ public:
      * Attempting to use invalid component types results in a compilation error.
      * Attempting to use an entity that doesn't belong to the view results in
      * undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Types of the components to get.
      * @param entity A valid entity identifier.
@@ -598,8 +598,8 @@ public:
      * Attempting to use invalid component types results in a compilation error.
      * Attempting to use an entity that doesn't belong to the view results in
      * undefined behavior.<br/>
-     * An assertion will abort the execution at runtime in debug mode if
-     * the view doesn't contain the given entity.
+     * An assertion will abort the execution at runtime in debug mode if the
+     * view doesn't contain the given entity.
      *
      * @tparam Comp Types of the components to get.
      * @param entity A valid entity identifier.
@@ -710,7 +710,7 @@ private:
  *
  * Single component views are specialized in order to get a boost in terms of
  * performance. This kind of views can access the underlying data structure
- * directly and avoid superflous checks.<br/>
+ * directly and avoid superfluous checks.<br/>
  * Order of elements during iterations are highly dependent on the order of the
  * underlying data structure. See SparseSet and its specializations for more
  * details.
